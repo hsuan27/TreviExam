@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TreviExam
+
+  Created by Hsuan on 2019/1/27.
+  Copyright © 2019年 Ting-Hsuan-Lee. All rights reserved.
+*/
+
+"AlertTitle:Remind" = "提醒";
+
+"AlertAction:Confirm" = "確定";
+
+"AlertMessage:InputEmpty" = "Column或Row不可為空";
+"AlertMessage:InputZero" = "請輸入大於0的數字";

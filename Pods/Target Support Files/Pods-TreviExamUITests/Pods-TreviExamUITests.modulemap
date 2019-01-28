@@ -1,0 +1,6 @@
+framework module Pods_TreviExamUITests {
+  umbrella header "Pods-TreviExamUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

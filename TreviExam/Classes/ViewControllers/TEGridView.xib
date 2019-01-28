@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TEGridView" customModule="TreviExam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="random" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7AF-6Q-paC">
+                    <rect key="frame" x="0.0" y="0.0" width="161" height="165"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhU-NP-jeG">
+                    <rect key="frame" x="0.0" y="165" width="161" height="16"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RhU-NP-jeG" secondAttribute="height" multiplier="161:16" id="Zkt-PL-8fb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7AF-6Q-paC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0OX-pa-1p0"/>
+                <constraint firstItem="RhU-NP-jeG" firstAttribute="top" secondItem="7AF-6Q-paC" secondAttribute="bottom" id="9Hk-YT-dJt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7AF-6Q-paC" secondAttribute="trailing" id="E5e-sL-dBD"/>
+                <constraint firstItem="RhU-NP-jeG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="S1z-Wg-qe6"/>
+                <constraint firstItem="RhU-NP-jeG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZgQ-cq-UHN"/>
+                <constraint firstItem="7AF-6Q-paC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nXS-ke-uqZ"/>
+                <constraint firstItem="RhU-NP-jeG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xFP-Gu-fzt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="m_lbRandom" destination="7AF-6Q-paC" id="uhX-en-Y0y"/>
+                <outlet property="m_vBottom" destination="RhU-NP-jeG" id="co3-Ah-NHk"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-133.5"/>
+        </view>
+    </objects>
+</document>
